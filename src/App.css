@@ -1,0 +1,23 @@
+/* App.css */
+
+@keyframes moveSharp {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(100px, -80px) scale(1.1); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+.clear-circle {
+  position: absolute;
+  border-radius: 50%;
+  /* Dark Pink Color - Sharp Look */
+  background-color: rgba(255, 0, 79, 0.18); 
+  border: 1px solid rgba(255, 0, 79, 0.3);
+  pointer-events: none;
+  z-index: 0;
+  animation: moveSharp 20s infinite ease-in-out;
+}
+
+/* Sab kuch transparent karne ke liye */
+section, main {
+  background: transparent !important;
+}

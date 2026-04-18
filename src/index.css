@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Global Border Reset (Only for Safety) */
+*, ::before, ::after {
+  --tw-border-opacity: 1;
+  border-color: transparent;
+}
+
+footer, .footer-container {
+  background: transparent !important;
+  background-color: transparent !important;
+}
