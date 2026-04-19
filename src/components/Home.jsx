@@ -108,15 +108,24 @@ export default function Home() {
 
         {/* Right Content: Photo Circle */}
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center">
-          <div className="relative w-[250px] h-[250px] sm:w-[320px] sm:h-[320px] lg:w-[400px] lg:h-[400px]">
-            <div className="w-full h-full rounded-full border-[8px] border-white dark:border-gray-800 shadow-2xl overflow-hidden bg-white dark:bg-gray-900 relative z-10 transition-colors">
+          {/* Container size maintain kiya hai */}
+          <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px]">
+            {/* Border aur Background ko Transparent kiya hai taaki piche ke circles dikhein */}
+            <div className="w-full h-full rounded-full border-[6px] border-[#ff004f]/20 dark:border-[#ff004f]/10 shadow-2xl overflow-hidden bg-transparent relative z-10 transition-all duration-500">
               <img
-                src="Lumii_20230825_211427600.jpg"
+                src="surajb.png"
                 alt="Suraj Arya"
-                className="w-full h-full object-cover object-right"
+                /* 🟢 FACE FIX: object-top use kiya hai taaki upar se na kaate */
+                /* 🟢 object-contain use kar sakte ho agar photo ke edges kat rahe hon */
+                className="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-500"
               />
             </div>
-            <div className="absolute inset-0 bg-[#ff004f]/5 dark:bg-[#ff004f]/10 rounded-full -z-10 scale-105"></div>
+
+            {/* Decorative Outer Ring - Jo thoda glow degi */}
+            <div className="absolute inset-0 bg-[#ff004f]/10 dark:bg-[#ff004f]/20 rounded-full -z-10 scale-110 blur-sm"></div>
+
+            {/* Ek aur thin border ring for premium look */}
+            <div className="absolute inset-0 border border-[#ff004f]/30 rounded-full -z-10 scale-105"></div>
           </div>
         </div>
       </div>
