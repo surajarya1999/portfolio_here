@@ -56,7 +56,7 @@ export default function Home() {
             <a href="https://wa.me/917509478047" target="_blank" rel="noreferrer" className="bg-[#ff004f] text-white px-6 py-2.5 rounded-lg font-bold shadow-md transition-all active:scale-95">
               Hire Me
             </a>
-            <a href="/Suraj_Arya_CV.pdf" download className="flex items-center gap-2 px-6 py-2.5 rounded-lg font-bold border-2 border-black dark:border-white text-black dark:text-white transition-all active:scale-95">
+            <a href="/Suraj_Arya_1CV.pdf" download className="flex items-center gap-2 px-6 py-2.5 rounded-lg font-bold border-2 border-black dark:border-white text-black dark:text-white transition-all active:scale-95">
               Download CV <FaDownload className="text-xs" />
             </a>
           </div>
