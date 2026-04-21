@@ -40,7 +40,10 @@ export default function Home() {
             <span className="text-gray-900 dark:text-gray-100 font-bold text-[11px] sm:text-xs uppercase tracking-wider">
               Next.js & MERN Developer
             </span>
-            <FaReact className="text-cyan-500 text-base animate-spin" style={{ animationDuration: "8s" }} />
+            <FaReact
+              className="text-cyan-500 text-base animate-spin"
+              style={{ animationDuration: "8s" }}
+            />
           </div>
 
           <h2 className="text-[35px] sm:text-[50px] lg:text-[65px] font-extrabold text-black dark:text-white leading-[1.1] mb-6 transition-colors">
@@ -49,21 +52,47 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-700 dark:text-gray-300 text-xs sm:text-sm md:text-base max-w-lg mb-8 leading-relaxed transition-colors">
-            I'm a passionate Full-Stack Developer specializing in building high-performance SaaS applications with <strong>Next.js</strong> and <strong>TypeScript</strong>.
+            I'm a passionate Full-Stack Developer specializing in building
+            high-performance SaaS applications with <strong>Next.js</strong> and{" "}
+            <strong>TypeScript</strong>.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-8">
-            <a href="https://wa.me/917509478047" target="_blank" rel="noreferrer" className="bg-[#ff004f] text-white px-6 py-2.5 rounded-lg font-bold shadow-md transition-all active:scale-95">
+            <a
+              href="https://wa.me/917509478047"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-[#ff004f] text-white px-6 py-2.5 rounded-lg font-bold shadow-md transition-all active:scale-95"
+            >
               Hire Me
             </a>
-            <a href="/Suraj_Arya_1CV.pdf" download className="flex items-center gap-2 px-6 py-2.5 rounded-lg font-bold border-2 border-black dark:border-white text-black dark:text-white transition-all active:scale-95">
+            <a
+              href="/New folder/Suraj_Arya_1CV.pdf"
+              download
+              className="flex items-center gap-2 px-6 py-2.5 rounded-lg font-bold border-2 !border-2 !border-solid border-black dark:border-white text-black dark:text-white transition-all active:scale-95 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
+              /* 🔴 FORCE BORDER: Inline style sabse upar hota hai */
+              style={{
+                border: "2px solid currentColor", // currentColor se light/dark mode khud handle ho jayega
+                display: "flex",
+              }}
+            >
               Download CV <FaDownload className="text-xs" />
             </a>
           </div>
 
           <div className="flex gap-5 text-xl text-gray-400 dark:text-gray-500">
-            <a href="https://github.com/repos" className="hover:text-[#ff004f] transition-colors"><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/suraj-arya460/" className="hover:text-[#ff004f] transition-colors"><FaLinkedin /></a>
+            <a
+              href="https://github.com/repos"
+              className="hover:text-[#ff004f] transition-colors"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/suraj-arya460/"
+              className="hover:text-[#ff004f] transition-colors"
+            >
+              <FaLinkedin />
+            </a>
           </div>
         </div>
 
@@ -71,7 +100,11 @@ export default function Home() {
         <div className="relative w-full md:w-1/2 flex justify-center md:justify-end items-center">
           <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[420px] lg:h-[420px]">
             <div className="w-full h-full rounded-full border-[6px] border-[#ff004f]/20 dark:border-[#ff004f]/10 shadow-2xl overflow-hidden bg-transparent relative z-10">
-              <img src="surajb.png" alt="Suraj Arya" className="w-full h-full object-cover object-top" />
+              <img
+                src="surajb.png"
+                alt="Suraj Arya"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <div className="absolute inset-0 bg-[#ff004f]/10 dark:bg-[#ff004f]/20 rounded-full -z-10 scale-110 blur-sm"></div>
           </div>
