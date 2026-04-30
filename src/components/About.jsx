@@ -113,7 +113,7 @@ export default function About() {
                   {activeTab === "experience" && (
                     <ul className="space-y-4">
                       <li className="border-l-4 border-[#ff004f] pl-4">
-                        <span className="text-[#ff004f] font-bold text-sm">2024 - 2025</span>
+                        <span className="text-[#ff004f] font-bold text-sm">2025 - 2026</span>
                         <p className="font-bold text-black dark:text-white">
                           Full Stack Developer Internship at PN Infosys (1 Year)
                         </p>
