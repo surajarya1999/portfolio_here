@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { FaGithub } from "react-icons/fa";
 
 export default function Portfolio() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -14,6 +15,7 @@ export default function Portfolio() {
       tech: ["Next.js", "TypeScript", "Firebase", "MongoDB"],
       desc: "Developed as a technical internship task. Features include Google Auth, dynamic job postings, and a recruiter dashboard for application management (Approve/Reject).",
       link: "https://clone-internshala.vercel.app/",
+      github: "https://github.com/surajarya1999/clone_internshala", // 🟢 GitHub link yahan dalo
     },
     {
       img: "hub.png",
@@ -22,6 +24,7 @@ export default function Portfolio() {
       tech: ["Next.js", "TypeScript", "Razorpay", "Nodemailer"],
       desc: "A core internship assignment featuring subscription-based access, Razorpay gateway integration, and automated email notifications for user onboarding.",
       link: "https://internship-platfrom.vercel.app/",
+      github: "https://github.com/surajarya1999/Internship-platfrom-task6", // 🟢 GitHub link yahan dalo
     },
     {
       img: "car2.png",
@@ -30,22 +33,25 @@ export default function Portfolio() {
       tech: ["MERN", "Razorpay", "Context API"],
       desc: "A fully responsive car rental platform with booking management and secure payment integration using the MERN stack.",
       link: "https://car-rental-with-suraj.netlify.app/",
+      github: "https://github.com/surajarya1999/Full_Stack_CAR_RENTAL", // 🟢 GitHub link yahan dalo
     },
     {
       img: "public.png",
       title: "PublicSpace - Social Networking App",
-      company: "Elevance Skills", 
+      company: "Elevance Skills",
       tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind"],
       desc: "A professional social platform with engagement features like Like, Comment, and Share. It features a unique dynamic post-limit logic based on friend count (1 friend = 1 post/day, 10+ friends = unlimited), showcasing advanced backend state management.",
       link: "https://public-space-wine.vercel.app/",
+      github: "https://github.com/surajarya1999/public-space", // 🟢 GitHub link yahan dalo
     },
     {
       img: "Ai.png",
       title: "AI Study Buddy",
-      company: "",
+      company: " College Workshop task",
       tech: ["React", "AI API", "Tailwind"],
       desc: "AI-powered tool that generates topic-wise learning cards to help students grasp complex concepts through structured learning.",
       link: "https://polite-pegasus-0170ea.netlify.app/",
+      github: "https://github.com/surajarya1999/ai-study-buddy", // 🟢 GitHub link yahan dalo
     },
   ];
 
@@ -153,6 +159,7 @@ export default function Portfolio() {
                 </p>
 
                 <div className="pt-4 border-t border-gray-50 dark:border-gray-700 flex items-center justify-between transition-colors">
+                  {/* 🟢 Live Demo Link */}
                   <a
                     href={work.link}
                     target="_blank"
@@ -163,6 +170,18 @@ export default function Portfolio() {
                     <span className="transition-transform group-hover/link:translate-x-1">
                       →
                     </span>
+                  </a>
+
+                  {/* 🔵 GitHub Repository Link (New) */}
+                  <a
+                    href={work.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-all duration-300 font-semibold text-sm group/git"
+                  >
+                    <FaGithub className="text-lg group-hover/git:scale-110 transition-transform" />
+                    <span className="hidden sm:inline">Code</span>{" "}
+                    {/* Mobile par sirf icon dikhega, bade screen par 'Code' likha aayega */}
                   </a>
                 </div>
               </div>
