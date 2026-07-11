@@ -44,6 +44,16 @@ export default function Portfolio() {
       link: "https://public-space-wine.vercel.app/",
       github: "https://github.com/surajarya1999/public-space", // 🟢 GitHub link yahan dalo
     },
+
+    {
+      img: "bgmi.png",
+      title: "BGMI Tournament Registration Platform",
+      company: "Personal Project",
+      tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+      desc: "A dynamic esports tournament website with auto-rotating hero slider, animated feature cards, and WhatsApp integration. Features squad registration (₹200 entry fee), automated group joining, tournament rules display, and prize pool showcase (₹50K+). Fully responsive with smooth animations.",
+      link: "https://bgmi-sooty.vercel.app/",
+      github: "https://github.com/surajarya1999/BGMI",
+    },
     {
       img: "Ai.png",
       title: "AI Study Buddy",
