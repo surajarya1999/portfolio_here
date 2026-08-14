@@ -9,6 +9,15 @@ export default function Portfolio() {
 
   const works = [
     {
+      img: "car2.png",
+      title: "Car Rental System (Full-Stack)",
+      company: "",
+      tech: ["MERN", "Razorpay", "Context API"],
+      desc: "A fully responsive car rental platform with booking management and secure payment integration using the MERN stack.",
+      link: "https://car-rental-with-suraj.netlify.app/",
+      github: "https://github.com/surajarya1999/Full_Stack_CAR_RENTAL", // 🟢 GitHub link yahan dalo
+    },
+    {
       img: "inter.png",
       title: "Internshala Clone (Full-Stack)",
       company: "Elevance Skills",
@@ -19,30 +28,12 @@ export default function Portfolio() {
     },
     {
       img: "hub.png",
-      title: "InternshipHub - SaaS Platform",
+      title: "InternshipHub - SaaS Platform (Full-Stack)",
       company: "Elevance Skills",
       tech: ["Next.js", "TypeScript", "Razorpay", "Nodemailer"],
       desc: "A core internship assignment featuring subscription-based access, Razorpay gateway integration, and automated email notifications for user onboarding.",
       link: "https://internship-platfrom.vercel.app/",
       github: "https://github.com/surajarya1999/Internship-platfrom-task6", // 🟢 GitHub link yahan dalo
-    },
-    {
-      img: "car2.png",
-      title: "Car Rental Full-Stack App",
-      company: "",
-      tech: ["MERN", "Razorpay", "Context API"],
-      desc: "A fully responsive car rental platform with booking management and secure payment integration using the MERN stack.",
-      link: "https://car-rental-with-suraj.netlify.app/",
-      github: "https://github.com/surajarya1999/Full_Stack_CAR_RENTAL", // 🟢 GitHub link yahan dalo
-    },
-    {
-      img: "public.png",
-      title: "PublicSpace - Social Networking App",
-      company: "Elevance Skills",
-      tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind"],
-      desc: "A professional social platform with engagement features like Like, Comment, and Share. It features a unique dynamic post-limit logic based on friend count (1 friend = 1 post/day, 10+ friends = unlimited), showcasing advanced backend state management.",
-      link: "https://public-space-wine.vercel.app/",
-      github: "https://github.com/surajarya1999/public-space", // 🟢 GitHub link yahan dalo
     },
 
     {
@@ -54,6 +45,17 @@ export default function Portfolio() {
       link: "https://bgmi-sooty.vercel.app/",
       github: "https://github.com/surajarya1999/BGMI",
     },
+
+    {
+      img: "public.png",
+      title: "PublicSpace - Social Networking App (Full-Stack)",
+      company: "Elevance Skills",
+      tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind"],
+      desc: "A professional social platform with engagement features like Like, Comment, and Share. It features a unique dynamic post-limit logic based on friend count (1 friend = 1 post/day, 10+ friends = unlimited), showcasing advanced backend state management.",
+      link: "https://public-space-wine.vercel.app/",
+      github: "https://github.com/surajarya1999/public-space", // 🟢 GitHub link yahan dalo
+    },
+
     {
       img: "Ai.png",
       title: "AI Study Buddy",

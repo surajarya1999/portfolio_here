@@ -92,7 +92,7 @@ export default function About() {
                       <div>
                         <p className="text-[#ff004f] font-bold text-[12px] uppercase">Frontend</p>
                         <p className="text-gray-800 dark:text-gray-200 transition-colors">
-                          HTML, CSS, JavaScript, Next.js, React.js, Tailwind CSS, <b>Bootstrap</b>
+                          HTML, CSS, Next.js, React.js, Tailwind CSS, JavaScript, TypeScript, <b>Bootstrap</b>
                         </p>
                       </div>
                       <div>
