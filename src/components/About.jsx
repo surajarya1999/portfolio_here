@@ -92,19 +92,19 @@ export default function About() {
                       <div>
                         <p className="text-[#ff004f] font-bold text-[12px] uppercase">Frontend</p>
                         <p className="text-gray-800 dark:text-gray-200 transition-colors">
-                          HTML, CSS, Next.js, React.js, Tailwind CSS, JavaScript, TypeScript, <b>Bootstrap</b>
+                          HTML, CSS, Next.js, React.js, TypeScript, Tailwind CSS, Bootstrap, <b> JavaScript </b>
                         </p>
                       </div>
                       <div>
                         <p className="text-[#ff004f] font-bold text-[12px] uppercase">Backend & Database</p>
                         <p className="text-gray-800 dark:text-gray-200 transition-colors">
-                          Node.js, Express.js, REST API, MongoDB, Mongoose, <b>Firebase Console</b>
+                          Node.js, Express.js, REST API, MongoDB, Mongoose, MySQL
                         </p>
                       </div>
                       <div>
                         <p className="text-[#ff004f] font-bold text-[12px] uppercase">Other Skills</p>
                         <p className="text-gray-800 dark:text-gray-200 transition-colors">
-                          UI/UX, Git & GitHub, Responsive Design, Deployment, Razorpay ,Vercel, Netlify ,Render
+                          UI/UX, Git & GitHub, Responsive Design, Deployment, Razorpay ,Vercel, Netlify ,Render <b>Firebase Console</b>
                         </p>
                       </div>
                     </div>
