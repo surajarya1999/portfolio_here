@@ -11,7 +11,7 @@ export default function Portfolio() {
     {
       img: "car2.png",
       title: "Car Rental System (Full-Stack)",
-      company: "",
+      company: "Pninfosys",
       tech: ["MERN", "Razorpay", "Context API"],
       desc: "A fully responsive car rental platform with booking management and secure payment integration using the MERN stack.",
       link: "https://car-rental-with-suraj.netlify.app/",
@@ -39,7 +39,7 @@ export default function Portfolio() {
     {
       img: "school.png", // Aap apne image file ka naam/path yahan change kar sakte hain
       title: "Oasis Public School Management Platform",
-      company: "Client Project",
+      company: "Freelancing Client Project",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       status: "In Progress (Backend Under Development)",
       desc: "A comprehensive MERN-stack web application designed for Oasis Public School. Features dynamic school announcements, interactive course/curriculum overview, student enrollment modules, and smooth user interactions. Built with responsive Tailwind CSS styling and engaging Framer Motion animations.",
