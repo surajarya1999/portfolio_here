@@ -37,6 +37,17 @@ export default function Portfolio() {
     },
 
     {
+      img: "school.png", // Aap apne image file ka naam/path yahan change kar sakte hain
+      title: "Oasis Public School Management Platform",
+      company: "Client Project",
+      tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+      status: "In Progress (Backend Under Development)",
+      desc: "A comprehensive MERN-stack web application designed for Oasis Public School. Features dynamic school announcements, interactive course/curriculum overview, student enrollment modules, and smooth user interactions. Built with responsive Tailwind CSS styling and engaging Framer Motion animations.",
+      link: "https://oasis-publice-school.vercel.app", // Apne deployed link ke hisab se update karein
+      github: "https://github.com/surajarya1999/Oasis-publice-school", // Apne GitHub repo ke hisab se update karein
+    },
+
+    {
       img: "bgmi.png",
       title: "BGMI Tournament Registration Platform",
       company: "Personal Project",
