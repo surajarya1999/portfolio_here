@@ -31,6 +31,7 @@ export default function Portfolio() {
     {
       img: "hub.png",
       title: "InternshipHub - SaaS Platform (Full-Stack)",
+      projectType: "Internship Task",
       company: "Elevance Skills",
       tech: ["Next.js", "TypeScript", "Razorpay", "Nodemailer"],
       desc: "A core internship assignment featuring subscription-based access, Razorpay gateway integration, and automated email notifications for user onboarding.",
@@ -41,7 +42,7 @@ export default function Portfolio() {
     {
       img: "school.png", // Aap apne image file ka naam/path yahan change kar sakte hain
       title: "Oasis Public School Management Platform",
-      projectType: "Client Project",
+      projectType: "Client Project ",
       company: "Freelancing Client Project",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       status: "In Progress (Backend Under Development)",
@@ -53,7 +54,7 @@ export default function Portfolio() {
     {
       img: "bgmi.png",
       title: "BGMI Tournament Registration Platform",
-      projectType: null,
+      projectType: "Startup Concept",
       company: "Personal Project",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       desc: "A dynamic esports tournament website with auto-rotating hero slider, animated feature cards, and WhatsApp integration. Features squad registration (₹200 entry fee), automated group joining, tournament rules display, and prize pool showcase (₹50K+). Fully responsive with smooth animations.",
@@ -160,15 +161,22 @@ export default function Portfolio() {
               <div className="p-8 flex flex-col gap-4">
                 <div className="flex justify-between items-start">
                   <div className="flex flex-col gap-1">
-                    {work.company && (
+                    {work.projectType && (
                       <span className="text-[10px] font-extrabold text-[#ff004f] uppercase tracking-[2px]">
                         {work.projectType}
                         {work.company ? ` @ ${work.company}` : ""}
                       </span>
                     )}
+
                     <h4 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors">
                       {work.title}
                     </h4>
+
+                    {work.status && (
+                      <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
+                        {work.status}
+                      </span>
+                    )}
                   </div>
                 </div>
 
