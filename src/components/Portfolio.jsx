@@ -11,6 +11,7 @@ export default function Portfolio() {
     {
       img: "car2.png",
       title: "Car Rental System (Full-Stack)",
+      projectType: "Internship Task",
       company: "Pninfosys",
       tech: ["MERN", "Razorpay", "Context API"],
       desc: "A fully responsive car rental platform with booking management and secure payment integration using the MERN stack.",
@@ -20,6 +21,7 @@ export default function Portfolio() {
     {
       img: "inter.png",
       title: "Internshala Clone (Full-Stack)",
+      projectType: "Internship Task",
       company: "Elevance Skills",
       tech: ["Next.js", "TypeScript", "Firebase", "MongoDB"],
       desc: "Developed as a technical internship task. Features include Google Auth, dynamic job postings, and a recruiter dashboard for application management (Approve/Reject).",
@@ -39,6 +41,7 @@ export default function Portfolio() {
     {
       img: "school.png", // Aap apne image file ka naam/path yahan change kar sakte hain
       title: "Oasis Public School Management Platform",
+      projectType: "Client Project",
       company: "Freelancing Client Project",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       status: "In Progress (Backend Under Development)",
@@ -50,6 +53,7 @@ export default function Portfolio() {
     {
       img: "bgmi.png",
       title: "BGMI Tournament Registration Platform",
+      projectType: null,
       company: "Personal Project",
       tech: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
       desc: "A dynamic esports tournament website with auto-rotating hero slider, animated feature cards, and WhatsApp integration. Features squad registration (₹200 entry fee), automated group joining, tournament rules display, and prize pool showcase (₹50K+). Fully responsive with smooth animations.",
@@ -60,6 +64,7 @@ export default function Portfolio() {
     {
       img: "public.png",
       title: "PublicSpace - Social Networking App (Full-Stack)",
+      projectType: "Internship Task",
       company: "Elevance Skills",
       tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Tailwind"],
       desc: "A professional social platform with engagement features like Like, Comment, and Share. It features a unique dynamic post-limit logic based on friend count (1 friend = 1 post/day, 10+ friends = unlimited), showcasing advanced backend state management.",
@@ -70,6 +75,7 @@ export default function Portfolio() {
     {
       img: "Ai.png",
       title: "AI Study Buddy",
+      projectType: "Workshop Task",
       company: " College Workshop task",
       tech: ["React", "AI API", "Tailwind"],
       desc: "AI-powered tool that generates topic-wise learning cards to help students grasp complex concepts through structured learning.",
@@ -156,7 +162,8 @@ export default function Portfolio() {
                   <div className="flex flex-col gap-1">
                     {work.company && (
                       <span className="text-[10px] font-extrabold text-[#ff004f] uppercase tracking-[2px]">
-                        Internship Task @ {work.company}
+                        {work.projectType}
+                        {work.company ? ` @ ${work.company}` : ""}
                       </span>
                     )}
                     <h4 className="text-2xl font-bold text-gray-900 dark:text-white leading-tight tracking-tight transition-colors">
